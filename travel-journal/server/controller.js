@@ -25,9 +25,9 @@ module.exports = {
             );
 
            create table cities (
-               city_id  serial primay key;
-               name varchar;
-               rating integer;
+               city_id  serial primary key,
+               name varchar,
+               rating integer,
                country_id integer references 
                countries(country_id)
            );
